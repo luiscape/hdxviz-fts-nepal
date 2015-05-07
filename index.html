@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="http/css/vendor/bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="http/css/style.css">
+    <link rel="stylesheet" type="text/css" href="http/css/dc.css">
+    <script type="text/javascript" src="http/js/pace.min.js"></script>
+    <script type="text/javascript" src="http/js/jquery.js"></script>
+    <script type="text/javascript" src="http/js/d3.min.js"></script>
+    <script type="text/javascript" src="http/js/crossfilter.v1.min.js"></script>
+    <script type="text/javascript" src="http/js/dc.js"></script>
+    <script type="text/javascript" src="http/data/index_data.js"></script>
+    <script type="text/javascript" src="http/data/adm0.js"></script>
+    <script type="text/javascript" src="http/data/adm4.js"></script>
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/EB+Garamond:400,400i/Open+Sans:400,700">
+    <title>Nepal Earthquake - Risk Index</title>
+</head>
+<style>
+</style>
+
+<body>
+    <div class="top-bar"></div>
+    <div class="col-xs-1 left-col-spacing"></div>
+    <div class="col-xs-10">
+        <div class="col-xs-8 no-padding">
+            <div class="row">
+                <h1 class="title">The Nepal Earthquake Severity Index</h1>
+            </div>
+            <div class="row">
+                <div id="map"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3" style="text-align:center;">
+                    <h4>Population Exposure</h4>
+                    <div id="fundign_time_series"></div>
+                </div>
+                <div class="col-xs-3" style="text-align:center;">
+                    <h4>Hazard Intensity</h4>
+                    <div id="hazard"></div>
+                </div>
+                <div class="col-xs-3" style="text-align:center;">
+                    <h4>Vulnerability Poverty</h4>
+                    <div id="poverty"></div>
+                </div>
+                <div class="col-xs-3" style="text-align:center;">
+                    <h4>Severity Index</h4>
+                    <div id="severity"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-1 left-col-spacing-plus"></div>
+        <div class="col-xs-3 filters-container">
+            <div class="row">
+                <span class='sub-title'>Explanation</span>
+                <h4><i>Data as of <span id='latest-updated'>April 30, 2015</span></i></h4>
+                <p>
+                    According to the author: "The Nepal Earthquake Severity Index is designed to provide an overview of estimated severity of impacts resulting from the earthquake of 25 April 2015. It is not a replacement for first hand damage and needs assessment information, but can support prioritisation during early stages of the response."
+                </p>
+                <p>
+                    For more information, refer to the <a href="https://docs.google.com/document/d/1x6IXahlOYYypLhlxTsB_X1CA4RVIAPKCMFewRPIvOzY/edit">technical note</a>.
+                </p>
+                <p>
+                    <a class="reset btn btn-primary btn-sm" href="https://data.hdx.rwlabs.org/dataset/nepal-earthquake-severity-index">Download Dataset on HDX</a>
+                </p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="sub-title no-padding" style="padding-top=10px;">
+                    <p>Filters</p>
+                </div>
+                <div id="count-info">
+                    <p>
+                        <span class="filter-count"></span> of <span class="total-count"></span> records selected.
+                    </p>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <a class="reset btn btn-primary btn-sm" href="javascript:dc.filterAll();dc.redrawAll();">Clear Selection</a>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Funding Status</h4>
+                <div id="funding_status"></div>
+            </div>
+            <br>
+        </div>
+    </div>
+    <script type="text/javascript" src="http/js/app.js"></script>
+</body>

@@ -1,0 +1,160 @@
+body {
+	font-family: 'Open Sans';
+	font-size: 12px;
+	font-weight: 400;
+  background-color: #FFFFFF;
+}
+
+h3 {
+	font-size: 16px;
+	font-weight: 800;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+h5 {
+	font-style: italic;
+	color: #ccc;
+}
+
+.top-bar {
+  background: #c79eda;
+  /* position: fixed; */
+  z-index: 1999;
+  top: 0;
+  left: 0;
+  height: 2px;
+}
+
+.title {
+	font-family: 'EB Garamond';
+	font-size: 45px;
+	padding-top: 5%;
+  padding-bottom: 4%;
+  margin-bottom: 0px !important;
+	font-style: italic;
+}
+
+.sub-title {
+	font-family: 'EB Garamond';
+	font-size: 27px;
+	font-style: italic;
+}
+
+.filters-container {
+   padding-top: 7%;
+}
+
+.result-container {
+   float: center;
+}
+
+/*.result-text {
+  padding-left: 0px;
+}
+*/
+
+/* loader */
+.pace .pace-progress {
+  background: #29d;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  height: 2px;
+
+  -webkit-transition: width 1s;
+  -moz-transition: width 1s;
+  -o-transition: width 1s;
+  transition: width 1s;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+
+/* Map styles */
+.intra-boundary {
+    fill: #ecf0f1;
+    stroke: #fff;
+    stroke-width: 2;
+    /*stroke-dasharray: 2,2;*/
+    /*stroke-linejoin: round;*/
+}
+
+.boundary {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 4;
+    /*stroke-dasharray: 2,2;*/
+    /*stroke-linejoin: round;*/
+}
+
+.d3-tip {
+    line-height: 1;
+    font-weight: bold;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+}
+/* Creates a small triangle extender for the tooltip */
+
+.d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.8);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+}
+/* Style northward tooltips differently */
+
+.d3-tip.n:after {
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+}
+
+/* dc style */
+.dc-chart g.row text {
+    fill: black;
+}
+
+.dc-chart .pie-slice {
+    fill:black;
+}
+
+/* no padding hack */
+.no-padding {
+  padding-left:0px !important;
+  padding-right:0px !important;
+}
+
+/* chart styles */
+.dc-chart g.row text {
+  fill: #404040 !important;
+}
+
+.dc-chart .pie-slice {
+  fill: #404040 !important;
+}
+/*.dc-chart .axis.y,*/
+/*.dc-chart .axis.y,*/
+.dc-chart .axis.y { 
+  opacity: 0.0;
+}
+
+
+.left-col-spacing {
+  width: 3% !important;
+}
+.left-col-spacing {
+  width: 6% !important;
+}
